@@ -6,7 +6,15 @@ An intelligent article writing system that uses **LangGraph** to orchestrate mul
 
 
 
-![Demo Screenshot](assets/image.png)
+![Demo Screenshot](assets/image1.png)
+
+![Demo Screenshot](assets/image2.png)
+
+![Demo Screenshot](assets/image3.png)
+
+## 🎥 Demo Video
+[Click here to watch the demo](https://github.com/user-attachments/assets/e1e54c2c-ede0-46aa-9074-02f6189d7bbb)
+
 
 ## 📖 Table of Contents
 
