@@ -9,11 +9,8 @@ An intelligent article writing system that uses **LangGraph** to orchestrate mul
 - [How It Works](#how-it-works)
 - [Project Structure](#project-structure)
 - [Setup & Installation](#setup--installation)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
 - [Code Walkthrough](#code-walkthrough)
-- [Frontend Integration](#frontend-integration)
-- [Deployment](#deployment)
+
 
 ---
 
@@ -212,84 +209,6 @@ The API will be available at:
 
 ---
 
-## 💻 Usage
-
-### **Option 1: Web Interface**
-1. Open `frontend/index.html` in your browser
-2. Enter your article topic (e.g., "Write about climate change")
-3. Click "Generate Article"
-4. View results with scores and metrics
-
-### **Option 2: API Direct Call**
-```bash
-curl -X POST "http://localhost:8000/api/generate-article" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "user_query": "Write a comprehensive article on renewable energy"
-  }'
-```
-
-### **Option 3: Python Script**
-```python
-import requests
-
-response = requests.post(
-    "http://localhost:8000/api/generate-article",
-    json={"user_query": "Write about artificial intelligence"}
-)
-
-result = response.json()
-print(f"Best Score: {result['best_score']}")
-print(f"Article:\n{result['best_article']}")
-```
-
----
-
-## 📡 API Documentation
-
-### **Endpoint: Generate Article**
-
-```http
-POST /api/generate-article
-Content-Type: application/json
-```
-
-**Request Body:**
-```json
-{
-  "user_query": "Write a comprehensive article on quantum computing"
-}
-```
-
-**Response:**
-```json
-{
-  "success": true,
-  "best_article": "Quantum computing represents...",
-  "best_score": 8.5,
-  "iterations": 2,
-  "final_grade": 8.5,
-  "justification": "The article demonstrates strong clarity...",
-  "message": "Article generated successfully"
-}
-```
-
-**Response Fields:**
-- `best_article`: The highest-scoring article from all iterations
-- `best_score`: Highest grade achieved (0-10 scale)
-- `iterations`: Number of improvement cycles run
-- `final_grade`: Grade of the last iteration
-- `justification`: Detailed feedback from the grader
-
-### **Other Endpoints**
-
-```http
-GET /health              # Health check
-GET /api/info            # API capabilities info
-GET /                    # Root endpoint with API overview
-```
-
----
 
 ## 🔍 Code Walkthrough
 
