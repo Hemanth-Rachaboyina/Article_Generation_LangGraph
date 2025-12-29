@@ -2,6 +2,12 @@
 
 An intelligent article writing system that uses **LangGraph** to orchestrate multiple AI agents in an iterative workflow. The system writes, grades, improves, and refines articles until they meet professional editorial standards.
 
+
+
+
+
+![Demo Screenshot](assets/image.png)
+
 ## 📖 Table of Contents
 
 - [Overview](#overview)
